@@ -206,7 +206,7 @@ footer {
     }
 
     main .hero img {
-        width: 400px;
+        width: 450px;
     }
 }
 
@@ -225,6 +225,6 @@ footer {
     }
 
     main .hero img {
-        width: 300px;
+        width: 90vw;
     }
 }
