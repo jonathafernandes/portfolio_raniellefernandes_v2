@@ -83,22 +83,24 @@ main .about p {
     background-color: #c2c2c2;
 }
 
-.btn-download {
+#btn-download {
     display: flex;
     align-items: center;
     gap: 7px;
     padding: 5px;
+    width: 10.1rem;
 
     background: none;
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Mukta', sans-serif;
+    font-size: 0.75rem;
     text-transform: uppercase;
     transition: 100ms;
 }
 
-.btn-download:hover {
+#btn-download:hover {
     background-color: #c2c2c2;
 }
 
