@@ -143,11 +143,7 @@ main .hero img {
     align-items: end;
 }
 
-#projects .card {
-    width: 300px;
-}
-
-#projects .card h3 {
+#projects h3 {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -155,8 +151,13 @@ main .hero img {
     font-size: 1.55rem;
     font-weight: 300;
 
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
+
+#projects .card {
+    width: 300px;
+}
+
 
 #projects .card img {
     border-radius: 10px;
