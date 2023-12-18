@@ -189,15 +189,6 @@ footer {
     gap: 5px;
 }
 
-.powered-by {
-    display: flex;
-    align-items: center;
-}
-
-.powered-by img {
-    width: 50px;
-}
-
 /* Project */
 
 .project {
