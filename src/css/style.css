@@ -7,7 +7,7 @@
 :root {
     --primary-color: #D6BFD6;
     --secondary-color: #c9a5c9;
-    --tertiary-color: #000;
+    --tertiary-color: #1f1f1f;
     --quaternary-color: #fff;
 }
 
@@ -20,16 +20,8 @@ body {
 }
 
 a {
-    color: #000;
+    color: var(--tertiary-color);
     text-decoration: none;
-}
-
-.line {
-    background-color: var(--primary-color);
-    color: var(--primary-color);
-
-    height: 4px;
-    width: 50px;
 }
 
 .container {
@@ -44,11 +36,11 @@ ul {
     font-size: 1.25rem;
 }
 
-/* header .navigation {
+header .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 3rem;
 }
 
 header img {
@@ -57,12 +49,12 @@ header img {
 
 header ul li:hover {
     opacity: 0.8;
-} */
+}
 
 main .hero {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
 }
 
 main .about h1 {
@@ -72,34 +64,28 @@ main .about h1 {
     margin-bottom: 20px;
 }
 
-main .arrow {
-    font-size: 2.4rem;
-
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-}
-
 main .about p {
     line-height: 30px;
     font-size: 1.25rem;
 
+    margin-bottom: 0.7rem;
     width: 90%;
 }
 
 .social {
     display: flex;
-    gap: 0;
+    gap: 0.2rem;
 }
 
-.social svg {
+.social i {
     cursor: pointer;
+    font-size: 2rem;
 
     transition: 100ms;
 }
 
-.social svg:hover {
-    background-color: var(--primary-color);
+.social i:hover {
+    opacity: 0.9;
 }
 
 .btn {
@@ -108,9 +94,9 @@ main .about p {
     gap: 7px;
     padding: 5px;
     width: 20.3%;
-    background: none;
-    border: 1px solid #000;
-    border-radius: 5px;
+    background: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 2px;
     cursor: pointer;
     font-family: 'Mukta', sans-serif;
     font-size: 0.75rem;
@@ -119,7 +105,8 @@ main .about p {
 }
 
 .curriculum {
-    width: 10.1rem;
+    margin-top: 0.7rem;
+    width: 10.5rem;
 }
 
 .principal {
@@ -148,7 +135,8 @@ main .hero img {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    /* margin-top: 30px; */
+
+    border-top: 1px solid var(--tertiary-color);
 }
 
 #projects .content {
@@ -168,6 +156,7 @@ main .hero img {
     display: flex;
     align-items: center;
     gap: 4px;
+    margin-top: 3rem;
 
     font-size: 1.55rem;
     font-weight: 300;
@@ -196,6 +185,7 @@ main .hero img {
 
 footer {
     background-color: var(--primary-color);
+    border-top: 1px solid var(--tertiary-color);
 
     display: flex;
     justify-content: space-around;
@@ -209,6 +199,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.contact-content i {
+    font-size: 1.3rem;
 }
 
 /* Project */
@@ -264,7 +258,7 @@ footer {
 }
 
 #border-details {
-    border: 1px solid #000;
+    border: 1px solid var(--tertiary-color);
 }
 
 @media(max-width: 1215px) {
@@ -308,11 +302,11 @@ footer {
 }
 
 @media (max-width: 470px) {
-    /* header .navigation {
+    header .navigation {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-    } */
+    }
 
     main .hero img {
         width: 90vw;
