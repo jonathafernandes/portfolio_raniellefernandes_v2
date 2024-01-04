@@ -88,28 +88,10 @@ main .about p {
     opacity: 0.9;
 }
 
-/* .btn {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    padding: 5px;
-    width: 20.3%;
-
-    background: var(--secondary-color);
-    border: 1px solid var(--tertiary-color);
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: 'Mukta', sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 100ms;
-} */
-
 .btn {
     align-items: center;
     appearance: none;
-    background-color: #FCFCFD;
+    background-color: var(--quaternary-color);
     border-radius: 4px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
@@ -117,7 +99,6 @@ main .about p {
     color: var(--tertiary-color);
     cursor: pointer;
     display: inline-flex;
-    /* font-family: "JetBrains Mono", monospace; */
     height: 48px;
     justify-content: center;
     line-height: 1;
@@ -151,18 +132,12 @@ box-shadow: #D6D6E7 0 3px 7px inset;
 transform: translateY(2px);
 }
 
-/* .curriculum {
-    margin-top: 0.7rem;
-    width: 10.5rem;
-} */
 
-.principal {
-    margin: 10px auto 38px auto;
+.curriculum i {
+    font-size: 1.2rem;
+
+    margin-right: 0.2rem;
 }
-
-/* .btn:hover {
-    background-color: var(--primary-color);
-} */
 
 main .hero img {
     border-radius: 5px;
@@ -193,10 +168,6 @@ main .hero img {
     gap: 20px;
 
     text-align: center;
-}
-
-.photoshop {
-    align-items: end;
 }
 
 #projects h3 {
