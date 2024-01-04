@@ -95,8 +95,8 @@ main .about p {
     padding: 5px;
     width: 20.3%;
     background: var(--secondary-color);
-    border: 1px solid var(--tertiary-color);
-    border-radius: 2px;
+    /* border: 1px solid var(--tertiary-color); */
+    border-radius: 5px;
     cursor: pointer;
     font-family: 'Mukta', sans-serif;
     font-size: 0.75rem;
