@@ -326,6 +326,11 @@ footer {
         width: 430px;
     }
 
+    #larger-image img {
+        height: auto;
+        width: 100%;
+    }
+
     #landpage {
         width: 80%;
     }
