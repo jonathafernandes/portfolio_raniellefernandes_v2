@@ -192,7 +192,13 @@ main .hero img {
     width: 300px;
 }
 
-#projects .card h4 {
+#larger-image img {
+    border-radius: 10px;
+
+    height: 300px;
+}
+
+#projects .card h4, #larger-image h4 {
     font-size: 1.35rem;
 }
 
@@ -275,6 +281,12 @@ footer {
     width: 500px;
 }
 
+#landpage {
+    border: 1px solid #1f1f1f;
+
+    width: 70%;
+}
+
 #border-details {
     border: 1px solid var(--tertiary-color);
 }
@@ -312,6 +324,10 @@ footer {
 
     .project .images img {
         width: 430px;
+    }
+
+    #landpage {
+        width: 80%;
     }
 
     .principal {
