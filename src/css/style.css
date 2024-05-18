@@ -44,7 +44,7 @@ header .navigation {
 }
 
 header img {
-    width: 50px;
+    width: 140px;
 }
 
 header ul li:hover {
@@ -166,8 +166,13 @@ main .hero img {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
 
     text-align: center;
+}
+
+#projects .no-alignment {
+    align-items: flex-start;
 }
 
 #projects h3 {
@@ -195,7 +200,7 @@ main .hero img {
 #larger-image img {
     border-radius: 10px;
 
-    height: 300px;
+    height: 200px;
 }
 
 #projects .card h4, #larger-image h4 {
