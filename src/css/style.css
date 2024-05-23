@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: #D6BFD6;
-    --secondary-color: #c9a5c9;
+    --primary-color: #D3164C;
+    --secondary-color: #07010C;
     --text-color: #07010C;
     --bg-color: #E3DCCF;
 }
@@ -28,13 +28,8 @@ a {
     text-decoration: none;
 }
 
-/* .container {
-    margin: 20px 10vw 20px 10vw;
-} */
-
 ul {
     display: flex;
-    /* gap: 20px; */
 
     list-style: none;
     font-size: 1.25rem;
@@ -44,7 +39,6 @@ header {
     background-color: var(--bg-color);
 
     padding: 3rem 3rem 0 3rem;
-    /* margin-top: 1rem; */
 }
 
 header img {
@@ -151,8 +145,8 @@ main .hero img {
 
 .skills {
     display: flex;
-    justify-content: center;
     gap: 5rem;
+    padding: 3rem;
 }
 
 .skills h3 {
@@ -160,20 +154,25 @@ main .hero img {
     font-size: 1.5rem;
 }
 
+.skills div {
+    width: 50%;
+}
+
 .skills ul {
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
     margin-top: 10px;
     line-height: 23px;
 }
 
-.soft-skills {
-    flex-direction: column;
-}
+.soft-skills li {
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    font-size: 0.95rem;
 
-.software-skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* flex-direction: row; */
+    padding: 0.6rem 0.6rem 0.2rem 0.6rem;
 }
 
 .skills ul li img {
@@ -181,67 +180,40 @@ main .hero img {
 }
 
 #projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    padding: 3rem;
 }
 
-#projects .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-
+#projects a {
+    position: relative;
+    display: block;
+    height: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
     text-align: center;
 }
 
-#projects .no-alignment {
-    align-items: flex-start;
+#projects a:hover::before {
+    content: "Clique para ver mais";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-#projects h3 {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 3rem;
-
-    font-size: 1.55rem;
-    font-weight: 300;
+#studio-nega-doce {
+    background-image: url('../assets/Captura de tela de 2024-05-18 11-13-35.png');
 }
 
-#projects .card {
-    margin-bottom: 50px;
-    width: 300px;
-}
-
-
-#projects .card img {
-    border-radius: 10px;
-
-    width: 300px;
-}
-
-#larger-image img {
-    border-radius: 10px;
-
-    height: 200px;
-}
-
-#projects .card h4,
-#larger-image h4 {
-    font-size: 1.35rem;
-}
-
-#projects .card p {
-    font-weight: 200;
-    line-height: 20px;
+#astro-ship {
+    background-image: url('../assets/Captura de tela de 2024-04-04 10-46-53.png');
 }
 
 footer {
-    background-color: var(--primary-color);
-    border-top: 1px solid var(--text-color);
+    background-color: #E3DCCF;
 
     display: flex;
     justify-content: space-around;
@@ -311,16 +283,6 @@ footer {
     border-radius: 10px;
 
     width: 500px;
-}
-
-#landpage {
-    border: 1px solid #1f1f1f;
-
-    width: 70%;
-}
-
-.border-details {
-    border: 1px solid var(--text-color);
 }
 
 @media(max-width: 1215px) {
