@@ -139,14 +139,13 @@ main .hero img {
 .section-title {
     font-size: 2rem;
     text-align: center;
-
-    margin-top: 50px;
 }
 
 .skills {
     display: flex;
     gap: 5rem;
     padding: 3rem;
+    margin: 6.25rem 0;
 }
 
 .skills h3 {
@@ -180,20 +179,39 @@ main .hero img {
 }
 
 #projects {
+    background-color: var(--secondary-color);
+    color: #f4f4f4;
+
     padding: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-#projects a {
+#projects .project-card h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: .5rem;
+}
+
+#projects .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .5rem;
+}
+
+#projects .project-card a {
     position: relative;
     display: block;
-    height: 900px;
+    width: 600px;
+    height: 250px;
     background-size: contain;
-    background-repeat: no-repeat;
+    border: 1px solid #c2c2c2;
     color: white;
-    text-align: center;
 }
 
-#projects a:hover::before {
+#projects .project-card a:hover::before {
     content: "Clique para ver mais";
     position: absolute;
     top: 50%;
@@ -203,6 +221,29 @@ main .hero img {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+#projects .project-tools {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#projects .project-tools span {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+#projects .project-tools img {
+    width: 20px;
+}
+
+#projects .project-tools li {
+    background-color: #E3DCCF;
+    border-radius: 10px;
+
+    padding: .6rem .6rem 0 .6rem;
+}
+
 
 #studio-nega-doce {
     background-image: url('../assets/Captura de tela de 2024-05-18 11-13-35.png');
@@ -231,58 +272,6 @@ footer {
 
 .contact-content i {
     font-size: 1.3rem;
-}
-
-/* Project */
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.project .title {
-    text-align: center;
-
-    width: 50%;
-}
-
-.project .title h2 {
-    font-size: 2rem;
-}
-
-.project .title p {
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
-.tags {
-    display: flex;
-    gap: 5px;
-}
-
-.tags span {
-    border: 1px solid #c9a5c9;
-    border-radius: 20px;
-    color: #c9a5c9;
-    font-size: 0.85rem;
-
-    padding: 5px;
-}
-
-.project .images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.project .images img {
-    border-radius: 10px;
-
-    width: 500px;
 }
 
 @media(max-width: 1215px) {
@@ -335,12 +324,6 @@ footer {
 }
 
 @media (max-width: 470px) {
-    /* header {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    } */
-
     main .hero img {
         width: 90vw;
     }
