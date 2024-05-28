@@ -35,6 +35,10 @@ ul {
     font-size: 1.25rem;
 }
 
+h2 {
+    padding: 3rem 3rem 0 3rem;
+}
+
 header {
     background-color: var(--bg-color);
 
@@ -129,7 +133,6 @@ main .about p {
     transform: translateY(2px);
 }
 
-
 main .hero img {
     border-radius: 5px;
 
@@ -206,7 +209,7 @@ main .hero img {
     overflow: hidden;
 }
 
-.img-container {
+#projects .img-container {
     position: relative;
 }
 
@@ -276,6 +279,27 @@ main .hero img {
     padding: .6rem .6rem 0 .6rem;
 }
 
+#academic-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 3rem 3rem 3rem;
+}
+
+#academic-projects .img-container {
+    width: 600px;
+}
+
+#academic-projects img {
+    width: 100%;
+}
+
+#academic-projects .project-card h3 {
+    background-color: #cecaca;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 footer {
     background-color: #E3DCCF;
 
@@ -327,6 +351,15 @@ footer {
     .skills {
         flex-direction: column;
         align-items: center;
+    }
+
+    #academic-projects {
+        justify-content: center;
+    }
+
+    #academic-projects .project-card,
+    #academic-projects img {
+        width: 300px;
     }
 
     footer {
