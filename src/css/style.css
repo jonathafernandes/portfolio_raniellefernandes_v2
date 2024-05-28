@@ -201,25 +201,57 @@ main .hero img {
     gap: .5rem;
 }
 
-#projects .project-card a {
+.project-card {
     position: relative;
-    display: block;
-    width: 600px;
-    height: 250px;
-    background-size: contain;
-    border: 1px solid #c2c2c2;
-    color: white;
+    overflow: hidden;
 }
 
-#projects .project-card a:hover::before {
-    content: "Clique para ver mais";
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.overlay button {
+    background-color: #ff9800;
+    border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.overlay button:hover {
+    background-color: #e68900;
 }
 
 #projects .project-tools {
@@ -242,15 +274,6 @@ main .hero img {
     border-radius: 10px;
 
     padding: .6rem .6rem 0 .6rem;
-}
-
-
-#studio-nega-doce {
-    background-image: url('../assets/Captura de tela de 2024-05-18 11-13-35.png');
-}
-
-#astro-ship {
-    background-image: url('../assets/Captura de tela de 2024-04-04 10-46-53.png');
 }
 
 footer {
@@ -282,6 +305,7 @@ footer {
     main .hero {
         flex-direction: column;
         align-items: center;
+        padding-top: 4rem;
     }
 
     main .about p {
@@ -300,26 +324,14 @@ footer {
 }
 
 @media (max-width: 774px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
-    }
-
-    .project .images img {
-        width: 430px;
-    }
-
-    #larger-image img {
-        height: auto;
-        width: 100%;
-    }
-
-    #landpage {
-        width: 80%;
-    }
-
-    .principal {
-        margin-bottom: 0;
     }
 }
 
@@ -328,11 +340,8 @@ footer {
         width: 90vw;
     }
 
-    .project .images img {
-        width: 290px;
-    }
-
-    .project .title {
-        width: 90%;
+    .skills,
+    #projects {
+        padding: 1rem;
     }
 }
