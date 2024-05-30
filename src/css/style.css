@@ -15,6 +15,13 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Waffle Mango Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Waffle Mango Regular'), url('fonts/Waffle Mango.woff') format('woff');
+}
+
 body {
     background-color: #f4f4f4;
     font-family: "Istok Web", sans-serif;
@@ -36,7 +43,7 @@ ul {
 }
 
 h2 {
-    padding: 3rem 3rem 0 3rem;
+    padding: 3rem 0;
 }
 
 header {
@@ -59,7 +66,7 @@ main .hero {
 
 main .about h1 {
     font-size: 6rem;
-    font-family: "Jomhuria", serif;
+    font-family: 'Waffle Mango Regular', sans-serif;
     letter-spacing: 5px;
     line-height: 45px;
     margin-bottom: 5px;
@@ -191,12 +198,6 @@ main .hero img {
     flex-wrap: wrap;
 }
 
-#projects .project-card h3 {
-    font-size: 1.5rem;
-
-    margin-bottom: .5rem;
-}
-
 #projects .project-card {
     display: flex;
     flex-direction: column;
@@ -245,16 +246,17 @@ main .hero img {
 }
 
 .overlay button {
-    background-color: #ff9800;
+    background-color: #FFBA3C;
     border: none;
     padding: 10px 20px;
-    color: white;
+    color: #000000;
     cursor: pointer;
     font-size: 1em;
 }
 
 .overlay button:hover {
-    background-color: #e68900;
+    background-color: #ffcb6b;
+    color: #000000
 }
 
 #projects .project-tools {
@@ -281,23 +283,27 @@ main .hero img {
 
 #academic-projects {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
     padding: 0 3rem 3rem 3rem;
 }
 
-#academic-projects .img-container {
+.academic-projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.academic-projects-content .img-container {
     width: 600px;
 }
 
-#academic-projects img {
+.academic-projects-content img {
     width: 100%;
 }
 
-#academic-projects .project-card h3 {
+.academic-projects-content .project-card h3 {
     background-color: #cecaca;
-    text-align: center;
-    text-transform: uppercase;
+    padding: 0.7rem;
 }
 
 footer {
@@ -353,12 +359,12 @@ footer {
         align-items: center;
     }
 
-    #academic-projects {
+    .academic-projects-content {
         justify-content: center;
     }
 
-    #academic-projects .project-card,
-    #academic-projects img {
+    .academic-projects-content .project-card,
+    .academic-projects-content img {
         width: 300px;
     }
 
