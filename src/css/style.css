@@ -106,12 +106,6 @@ main .about p {
 .social i {
     cursor: pointer;
     font-size: 2rem;
-
-    transition: 100ms;
-}
-
-.social i:hover {
-    opacity: 0.9;
 }
 
 main .hero img {
@@ -257,7 +251,7 @@ main .hero img {
     background-color: #E3DCCF;
     border-radius: 10px;
 
-    padding: .6rem .6rem 0 .6rem;
+    padding: .6rem .9rem;
 }
 
 #academic-projects {
@@ -367,5 +361,9 @@ footer {
     .skills,
     #projects {
         padding: 1rem;
+    }
+
+    #academic-projects {
+        padding: 0.6rem;
     }
 }
